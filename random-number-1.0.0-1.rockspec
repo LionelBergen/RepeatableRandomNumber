@@ -1,8 +1,8 @@
 package = "random-number"
 version = "1.0.0-1"
 source = {
-   url = "https://github.com/LionelBergen/RandomNumber",
-   tag = "v1.0",
+   url = "git://github.com/LionelBergen/RandomNumber",
+   tag = "master",
 }
 description = {
    summary = "RandomNumber generator and manager.",
