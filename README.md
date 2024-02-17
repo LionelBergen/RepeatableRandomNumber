@@ -1,4 +1,4 @@
-RandomNumber.lua  
+RepeatableRandomNumber.lua  
 ----------------  
 Simple Lua Class for Generating and Managing Random Numbers
 
