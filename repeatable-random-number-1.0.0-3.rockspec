@@ -18,6 +18,6 @@ dependencies = {
 build = {
 	["type"] = "builtin",
 	modules = {
-		randomnumber = "RepeatableRandomNumber.lua"
+		repeatablerandomnumber = "RepeatableRandomNumber.lua"
 	}
 }
