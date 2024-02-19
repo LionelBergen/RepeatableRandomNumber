@@ -164,6 +164,19 @@ function TestRepeatableRandomNumber.testJumpToIterationInvalidArgumentNaN()
     lu.assertStrContains(errorMessage, "Invalid argument")
 end
 
+function TestRepeatableRandomNumber.testJumpToIterationInvalidArgumentNil()
+    -- Use pcall to catch the error
+    local success, errorMessage = pcall(function()
+        rng:jumpToIteration(nil)
+    end)
+
+    -- Check that pcall was not successful (error was thrown)
+    lu.assertFalse(success)
+
+    -- Check that the error message is as expected
+    lu.assertStrContains(errorMessage, "Invalid argument")
+end
+
 function TestRepeatableRandomNumber.testJumpToIterationNilSeed()
     local rngTarget = RepeatableRandomNumber:new()
     lu.assertNotNil(rngTarget.seed)
